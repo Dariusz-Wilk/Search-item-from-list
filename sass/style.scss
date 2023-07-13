@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -20,6 +20,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		align-items: center;
 		position: relative;
 		padding: 15px;
 		height: 180px;
@@ -53,9 +54,18 @@ body {
 				outline: none;
 			}
 		}
+
+		.searchBtn {
+			border: none;
+			background-color: #c0c0c0c5;
+			padding: 5px 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			width: 60%;
+		}
 	}
 
-	.drink-list {
+	.book-list {
 		padding: 30px;
 		h2 {
 			margin-bottom: 10px;
