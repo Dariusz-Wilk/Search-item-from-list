@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+}
+
+.wrapper {
+	width: 400px;
+	box-shadow: 0 0 10px black;
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		padding: 15px;
+		height: 180px;
+		background-image: url('https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg');
+		background-position: center;
+		background-size: contain;
+		z-index: 0;
+		.shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.314);
+			z-index: -1;
+		}
+		h1 {
+			font-family: 'Dancing Script', cursive;
+			color: rgb(241, 238, 238);
+		}
+		.search {
+			width: 100%;
+			height: 30px;
+			background-color: rgba(255, 255, 255, 0.791);
+			border: none;
+			border-radius: 3px;
+			padding: 0 7px;
+			margin: 15px 0 10px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.drink-list {
+		padding: 30px;
+		h2 {
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		ul {
+			list-style: none;
+
+			li {
+				padding: 4px 20px;
+
+				border-bottom: 1px solid rgba(116, 114, 114, 0.208);
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
